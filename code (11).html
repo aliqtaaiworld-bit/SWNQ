@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" dir="ltr" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SWNQ - Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#ffb95f",
+                      "surface-container": "#e9edff",
+                      "tertiary-container": "#e29100",
+                      "surface-tint": "#006c49",
+                      "tertiary-fixed": "#ffddb8",
+                      "inverse-primary": "#4edea3",
+                      "primary-fixed": "#6ffbbe",
+                      "tertiary": "#855300",
+                      "surface-container-low": "#f1f3ff",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#bbcabf",
+                      "outline": "#6c7a71",
+                      "surface-bright": "#f9f9ff",
+                      "secondary-container": "#316bf3",
+                      "on-tertiary-fixed-variant": "#653e00",
+                      "on-secondary-fixed": "#00174b",
+                      "on-surface": "#141b2b",
+                      "surface-dim": "#d3daef",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#002113",
+                      "secondary-fixed": "#dbe1ff",
+                      "on-secondary": "#ffffff",
+                      "surface-container-high": "#e1e8fd",
+                      "surface-container-highest": "#dce2f7",
+                      "on-primary-fixed-variant": "#005236",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#523200",
+                      "on-background": "#141b2b",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#b4c5ff",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#3c4a42",
+                      "primary-fixed-dim": "#4edea3",
+                      "on-secondary-container": "#fefcff",
+                      "inverse-on-surface": "#edf0ff",
+                      "surface-variant": "#dce2f7",
+                      "on-primary-container": "#00422b",
+                      "surface": "#f9f9ff",
+                      "on-secondary-fixed-variant": "#003ea8",
+                      "background": "#f9f9ff",
+                      "primary-container": "#10b981",
+                      "inverse-surface": "#293040",
+                      "secondary": "#0051d5",
+                      "on-tertiary-fixed": "#2a1700",
+                      "primary": "#006c49"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "margin-desktop": "32px",
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "status-badge": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "status-badge": [
+                              "11px",
+                              {
+                                      "lineHeight": "12px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Hide number input spinners */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        /* Material Icons Setup */
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+
+        /* Radio Button Custom Styling */
+        .role-card input[type="radio"]:checked + div {
+            border-color: #006c49;
+            background-color: #f1f3ff;
+        }
+        
+        .role-card input[type="radio"]:checked + div .icon-container {
+            background-color: #006c49;
+            color: #ffffff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center p-margin-mobile md:p-margin-desktop">
+<div class="w-full max-w-md flex flex-col gap-8 bg-surface-container-lowest p-6 md:p-8 rounded-xl shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.05)] border border-outline-variant">
+<!-- Header Section -->
+<div class="flex flex-col items-center text-center gap-2">
+<div class="text-primary mb-2">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">work</span>
+</div>
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary">SWNQ</h1>
+<h2 class="text-headline-md font-headline-md mt-4 text-on-surface">How would you like to use SWNQ?</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Select your primary role to customize your experience.</p>
+</div>
+<!-- Role Selection Form -->
+<form class="flex flex-col gap-6 w-full" id="onboardingForm">
+<div class="flex flex-col gap-4">
+<!-- Worker Option -->
+<label class="role-card relative cursor-pointer group w-full">
+<input class="sr-only peer" name="userRole" required="" type="radio" value="worker"/>
+<div class="flex items-start gap-4 p-4 rounded-lg border border-outline-variant bg-surface transition-all duration-200 group-hover:border-primary group-hover:bg-surface-container-low">
+<div class="icon-container flex-shrink-0 w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center transition-colors duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+</div>
+<div class="flex flex-col flex-grow">
+<span class="text-label-md font-label-md text-on-surface">I'm a Worker</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Find work and manage availability</span>
+</div>
+<!-- Custom Radio Indicator (Hidden by default, shown on checked via CSS or JS, here we rely on peer-checked in standard tailwind but standard tailwind doesn't have a direct sibling combinator for deeply nested. So we use a simple border/bg change above) -->
+<div class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</label>
+<!-- Employer Option -->
+<label class="role-card relative cursor-pointer group w-full">
+<input class="sr-only peer" name="userRole" type="radio" value="employer"/>
+<div class="flex items-start gap-4 p-4 rounded-lg border border-outline-variant bg-surface transition-all duration-200 group-hover:border-primary group-hover:bg-surface-container-low">
+<div class="icon-container flex-shrink-0 w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center transition-colors duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">business_center</span>
+</div>
+<div class="flex flex-col flex-grow">
+<span class="text-label-md font-label-md text-on-surface">I'm an Employer</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Find workers and manage projects</span>
+</div>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</label>
+</div>
+<!-- Action Area -->
+<div class="flex flex-col gap-4 mt-2">
+<button class="w-full h-[48px] bg-primary text-on-primary rounded-lg text-label-md font-label-md flex items-center justify-center hover:bg-on-primary-fixed-variant transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled="" id="nextButton" type="submit">
+                        Next
+                    </button>
+<div class="text-center">
+<span class="text-body-md font-body-md text-on-surface-variant">Already have an account?</span>
+<a class="text-label-md font-label-md text-primary hover:text-on-primary-fixed-variant ml-1 underline decoration-primary/30 underline-offset-4" href="#">Log in</a>
+</div>
+</div>
+</form>
+</div>
+</main>
+<script>
+        // Simple vanilla JS to enable button only when a role is selected
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('onboardingForm');
+            const nextButton = document.getElementById('nextButton');
+            const radioButtons = form.querySelectorAll('input[type="radio"][name="userRole"]');
+
+            radioButtons.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    if (form.querySelector('input[name="userRole"]:checked')) {
+                        nextButton.removeAttribute('disabled');
+                    }
+                });
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const selectedRole = form.querySelector('input[name="userRole"]:checked')?.value;
+                if(selectedRole) {
+                    console.log(`Proceeding with role: ${selectedRole}`);
+                    // In a real app, this would route to the next step
+                    nextButton.innerHTML = '<span class="material-symbols-outlined animate-spin mr-2">progress_activity</span> Processing...';
+                    setTimeout(() => {
+                        alert(`Selected: ${selectedRole}. Navigating to next step...`);
+                        nextButton.innerHTML = 'Next';
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SWNQ - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "surface-container": "#e9edff",
+                        "tertiary-container": "#e29100",
+                        "surface-tint": "#006c49",
+                        "tertiary-fixed": "#ffddb8",
+                        "inverse-primary": "#4edea3",
+                        "primary-fixed": "#6ffbbe",
+                        "tertiary": "#855300",
+                        "surface-container-low": "#f1f3ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bbcabf",
+                        "outline": "#6c7a71",
+                        "surface-bright": "#f9f9ff",
+                        "secondary-container": "#316bf3",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "on-secondary-fixed": "#00174b",
+                        "on-surface": "#141b2b",
+                        "surface-dim": "#d3daef",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#002113",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e1e8fd",
+                        "surface-container-highest": "#dce2f7",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#523200",
+                        "on-background": "#141b2b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3c4a42",
+                        "primary-fixed-dim": "#4edea3",
+                        "on-secondary-container": "#fefcff",
+                        "inverse-on-surface": "#edf0ff",
+                        "surface-variant": "#dce2f7",
+                        "on-primary-container": "#00422b",
+                        "surface": "#f9f9ff",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "background": "#f9f9ff",
+                        "primary-container": "#10b981",
+                        "inverse-surface": "#293040",
+                        "secondary": "#0051d5",
+                        "on-tertiary-fixed": "#2a1700",
+                        "primary": "#006c49"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "margin-desktop": "32px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "status-badge": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "status-badge": ["11px", { "lineHeight": "12px", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        
+        .hero-pattern {
+            background-color: #f9f9ff;
+            background-image: radial-gradient(#dce2f7 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen hero-pattern flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+<main class="w-full max-w-md mx-auto relative z-10">
+<!-- Logo Header -->
+<div class="text-center mb-8">
+<h1 class="text-display-lg font-display-lg text-primary tracking-tight">SWNQ</h1>
+<p class="mt-2 text-body-md font-body-md text-on-surface-variant">Connecting reliable workforce in real-time.</p>
+</div>
+<!-- Login Card -->
+<div class="glass-panel rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden p-8">
+<h2 class="text-headline-md font-headline-md text-on-surface mb-6">Log In</h2>
+<form class="space-y-6" onsubmit="event.preventDefault(); document.getElementById('otp-stage').classList.remove('hidden'); this.classList.add('hidden');">
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-2" for="phone-number">Mobile Number</label>
+<div class="relative mt-1 flex rounded-lg shadow-sm">
+<span class="inline-flex items-center rounded-l-lg border border-r-0 border-outline-variant bg-surface-container-low px-4 text-on-surface-variant text-body-md font-body-md">
+                            +974
+                        </span>
+<input class="block w-full min-w-0 flex-1 rounded-none rounded-r-lg border-outline-variant focus:border-secondary focus:ring-secondary text-body-md font-body-md py-3 px-4" id="phone-number" name="phone-number" placeholder="5555 5555" required="" type="tel"/>
+</div>
+</div>
+<button class="flex w-full justify-center rounded-lg bg-primary-container px-4 py-3 text-label-md font-label-md text-on-primary shadow-sm hover:bg-primary-container/90 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 transition-colors min-h-[48px] items-center" type="submit">
+                    Send OTP
+                </button>
+</form>
+<!-- OTP Verification Stage (Hidden by default) -->
+<form class="space-y-6 hidden" id="otp-stage" onsubmit="event.preventDefault(); window.location.href='#';">
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-2">Enter Verification Code</label>
+<p class="text-body-sm text-on-surface-variant mb-4">We've sent a 4-digit code to your mobile number.</p>
+<div class="flex justify-between gap-2 mb-4">
+<input autofocus="" class="w-14 h-14 text-center text-headline-md font-headline-md rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary" maxlength="1" type="text"/>
+<input class="w-14 h-14 text-center text-headline-md font-headline-md rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary" maxlength="1" type="text"/>
+<input class="w-14 h-14 text-center text-headline-md font-headline-md rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary" maxlength="1" type="text"/>
+<input class="w-14 h-14 text-center text-headline-md font-headline-md rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary" maxlength="1" type="text"/>
+</div>
+<button class="text-label-sm font-label-sm text-secondary hover:text-secondary-container transition-colors" type="button">Resend Code</button>
+</div>
+<button class="flex w-full justify-center rounded-lg bg-primary-container px-4 py-3 text-label-md font-label-md text-on-primary shadow-sm hover:bg-primary-container/90 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 transition-colors min-h-[48px] items-center" type="submit">
+                    Verify &amp; Login
+                </button>
+<button class="flex w-full justify-center rounded-lg bg-transparent border border-outline-variant px-4 py-3 text-label-md font-label-md text-on-surface hover:bg-surface-container-low focus:outline-none transition-colors min-h-[48px] items-center" onclick="document.getElementById('otp-stage').classList.add('hidden'); document.querySelector('form').classList.remove('hidden');" type="button">
+                    Back
+                </button>
+</form>
+<div class="mt-8">
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="bg-surface-container-lowest px-2 text-on-surface-variant text-label-sm font-label-sm">Or continue with</span>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<button class="flex w-full items-center justify-center rounded-lg border border-outline-variant bg-surface-container-lowest px-4 py-3 text-label-md font-label-md text-on-surface shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-on-surface-variant mr-2 text-[20px]" data-icon="mail">mail</span>
+                        Email
+                    </button>
+<button class="flex w-full items-center justify-center rounded-lg border border-outline-variant bg-surface-container-lowest px-4 py-3 text-label-md font-label-md text-on-surface shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-on-surface-variant mr-2 text-[20px]" data-icon="globe">globe</span>
+                        Google
+                    </button>
+</div>
+</div>
+<p class="mt-8 text-center text-label-sm font-label-sm text-on-surface-variant">
+                By logging in, you agree to our <a class="font-semibold text-secondary hover:text-secondary-container" href="#">Terms of Service</a> and <a class="font-semibold text-secondary hover:text-secondary-container" href="#">Privacy Policy</a>.
+            </p>
+</div>
+</main>
+<script>
+        // Simple script to move focus to next input in OTP stage
+        const inputs = document.querySelectorAll('#otp-stage input[type="text"]');
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                if (e.target.value.length === 1) {
+                    if (index < inputs.length - 1) {
+                        inputs[index + 1].focus();
+                    }
+                }
+            });
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value === '') {
+                    if (index > 0) {
+                        inputs[index - 1].focus();
+                    }
+                }
+            });
+        });
+    </script>
+</body></html>

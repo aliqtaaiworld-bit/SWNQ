@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SWNQ - SmartWork Now Qatar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "surface-container": "#e9edff",
+                        "tertiary-container": "#e29100",
+                        "surface-tint": "#006c49",
+                        "tertiary-fixed": "#ffddb8",
+                        "inverse-primary": "#4edea3",
+                        "primary-fixed": "#6ffbbe",
+                        "tertiary": "#855300",
+                        "surface-container-low": "#f1f3ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bbcabf",
+                        "outline": "#6c7a71",
+                        "surface-bright": "#f9f9ff",
+                        "secondary-container": "#316bf3",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "on-secondary-fixed": "#00174b",
+                        "on-surface": "#141b2b",
+                        "surface-dim": "#d3daef",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#002113",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e1e8fd",
+                        "surface-container-highest": "#dce2f7",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#523200",
+                        "on-background": "#141b2b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3c4a42",
+                        "primary-fixed-dim": "#4edea3",
+                        "on-secondary-container": "#fefcff",
+                        "inverse-on-surface": "#edf0ff",
+                        "surface-variant": "#dce2f7",
+                        "on-primary-container": "#00422b",
+                        "surface": "#f9f9ff",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "background": "#f9f9ff",
+                        "primary-container": "#10b981",
+                        "inverse-surface": "#293040",
+                        "secondary": "#0051d5",
+                        "on-tertiary-fixed": "#2a1700",
+                        "primary": "#006c49"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "margin-desktop": "32px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "status-badge": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "status-badge": ["11px", { "lineHeight": "12px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 100ms; opacity: 0; }
+        .delay-200 { animation-delay: 200ms; opacity: 0; }
+        .delay-300 { animation-delay: 300ms; opacity: 0; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased h-screen w-screen overflow-hidden flex flex-col">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="A high-quality, professional photograph of industrial workers at a modern construction site or oil refinery in Qatar during golden hour. The workers are wearing pristine safety gear, including hard hats and high-visibility vests. The scene exudes reliability, scale, and modern engineering. The lighting is dramatic yet clear, emphasizing the high-trust, corporate aesthetic of the SWNQ platform. The image uses a rich palette with subtle industrial tones, ensuring a premium, high-impact visual that instills immediate confidence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_y3o4zVKea0faEWNkSuej9nIR4h-Hwl5Cp_MMetgm6CZFqrTsG6wEoZ07pnsLzG49xc1LZtHXmXKXuhwFfy5YYGRaYId4kYWuHD3mvmo4RVbpLKngYbrc8FbvKhtkpuREByOFWXH8I_iIp80YRcq0NB1e3NoW1F-kf0q1FdeHguEk740iLj6oyTlSBGzCkdcTnvcWZym8sY52mTpsIZfBTphCohBAl2OP8JqAKM8zLhMkz6Ui0dA9')">
+</div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-inverse-surface/80 via-inverse-surface/40 to-inverse-surface/90"></div>
+</div>
+<!-- Main Content Container -->
+<main class="relative z-10 flex flex-col items-center justify-between h-full w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Top Spacer -->
+<div class="w-full flex justify-center">
+<!-- Brand Logo -->
+<div class="animate-fade-up text-primary-fixed font-display-lg tracking-tight flex items-center gap-3">
+<svg class="text-primary-container" fill="none" height="40" viewbox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"></path>
+<path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                SWNQ
+            </div>
+</div>
+<!-- Center Content -->
+<div class="flex flex-col items-center text-center max-w-2xl px-4 w-full">
+<h1 class="animate-fade-up delay-100 font-display-lg text-on-primary mb-6 drop-shadow-lg leading-tight">
+                Work Available.<br/>
+                Workers Available.<br/>
+<span class="text-primary-container">Now.</span>
+</h1>
+<p class="animate-fade-up delay-200 font-body-lg text-surface-container-highest mb-12 max-w-lg drop-shadow-md">
+                The premier platform connecting reliable industrial talent with Qatar's top enterprises in real-time.
+            </p>
+</div>
+<!-- Bottom Action Area -->
+<div class="w-full max-w-md animate-fade-up delay-300">
+<div class="glass-panel rounded-xl p-6 shadow-xl w-full flex flex-col gap-4">
+<button class="w-full h-12 bg-primary-container hover:bg-primary text-on-primary font-label-md rounded-lg transition-colors duration-200 shadow-md flex items-center justify-center gap-2">
+                    Get Started
+                    <svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant font-label-sm mt-2">
+<span>Already have an account?</span>
+<a class="text-secondary hover:text-secondary-fixed-variant font-bold transition-colors" href="#">Log in</a>
+</div>
+</div>
+</div>
+</main>
+</body></html>
