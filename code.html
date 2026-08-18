@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Manpower Request - SWNQ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#fefcff",
+                    "inverse-surface": "#293040",
+                    "inverse-primary": "#4edea3",
+                    "surface-container-highest": "#dce2f7",
+                    "outline-variant": "#bbcabf",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#00174b",
+                    "on-surface": "#141b2b",
+                    "error-container": "#ffdad6",
+                    "outline": "#6c7a71",
+                    "on-secondary-fixed-variant": "#003ea8",
+                    "primary-fixed-dim": "#4edea3",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-container-low": "#f1f3ff",
+                    "surface-container": "#e9edff",
+                    "surface-variant": "#dce2f7",
+                    "surface": "#f9f9ff",
+                    "tertiary-container": "#e29100",
+                    "on-surface-variant": "#3c4a42",
+                    "background": "#f9f9ff",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e1e8fd",
+                    "primary": "#006c49",
+                    "on-primary-container": "#00422b",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#edf0ff",
+                    "on-tertiary-container": "#523200",
+                    "secondary-container": "#316bf3",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "on-primary-fixed": "#002113",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#855300",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#006c49",
+                    "surface-bright": "#f9f9ff",
+                    "primary-container": "#10b981",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "primary-fixed": "#6ffbbe",
+                    "secondary": "#0051d5",
+                    "on-tertiary-fixed": "#2a1700",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#dbe1ff",
+                    "surface-dim": "#d3daef",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-background": "#141b2b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "gutter": "16px",
+                    "unit": "4px",
+                    "margin-desktop": "32px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "status-badge": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "status-badge": ["11px", {"lineHeight": "12px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f9f9ff;
+            color: #141b2b;
+        }
+        .form-input {
+            border-color: #d1d5db;
+            border-width: 1px;
+            border-radius: 0.25rem;
+            padding: 0.5rem 0.75rem;
+            width: 100%;
+        }
+        .form-input:focus {
+            border-color: #2563eb;
+            border-width: 2px;
+            outline: none;
+            box-shadow: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased font-body-md text-body-md pt-16 pb-20 md:pb-0 md:pl-80">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-outline fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 h-16 md:pl-80">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary dark:text-primary-fixed-dim hover:bg-surface-container p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<span class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed-dim">SWNQ</span>
+</div>
+<div class="text-primary dark:text-primary-fixed-dim hover:bg-surface-container p-2 rounded-full transition-colors cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</div>
+</header>
+<!-- NavigationDrawer (Web) -->
+<nav class="hidden md:flex bg-surface dark:bg-inverse-surface shadow-xl fixed inset-y-0 left-0 z-[60] flex-col h-full w-80 rounded-r-xl border-r border-outline-variant">
+<div class="p-6 border-b border-outline-variant">
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A professional headshot of a skilled construction worker in safety gear against a modern industrial background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGRPnRcXErBxZlY3LZBcy0645bOlpRTXOaVGr8RwgpEXH3lxcWqFagGAtIHy0be_VF1HMzUjeLno0q1mz9NuyglcgmXU_65WLj8j4UL8OXpO1rEJ9Q0BibYdP_L0x30ADJNm5eliT7mvGd86a7i7Jrozqo0_t8r-j6Rizfnh-03plibhmAUFOeZ7BeQ1n0HQfG_p42724g7o3x1QNOZZAQx4-r4WoiSDuqI2in99MiqiWWFLQy_UDG"/>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Ahmed Hassan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Skilled Mason</p>
+<span class="inline-block mt-1 px-2 py-1 bg-surface-container-high rounded text-xs font-bold text-primary">Verified Worker</span>
+</div>
+</div>
+</div>
+<div class="flex-1 py-4 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 mx-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">swap_horiz</span>
+<span class="font-label-md text-label-md">Switch to Employer</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 mx-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 mx-2 bg-secondary-container text-on-secondary-container font-bold rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-label-md text-label-md">Manpower Requests</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 mx-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-label-md text-label-md">Saved Workers</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 mx-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-md text-label-md">Payment History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 mx-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 mx-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Help Support</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto">
+<div class="mb-8">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Create Manpower Request</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Specify your requirements to find the right skilled workers quickly.</p>
+</div>
+<form class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Position & Quantity -->
+<div class="space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Position Required</label>
+<select class="form-input font-body-md text-body-md bg-transparent">
+<option value="">Select or search position...</option>
+<option value="mason">Mason</option>
+<option value="electrician">Electrician</option>
+<option value="plumber">Plumber</option>
+<option value="welder">Welder</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Quantity</label>
+<input class="form-input font-body-md text-body-md bg-transparent" min="1" placeholder="e.g. 5" type="number"/>
+</div>
+</div>
+<!-- Experience & Certification -->
+<div class="space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Experience Required</label>
+<select class="form-input font-body-md text-body-md bg-transparent">
+<option value="">Select experience level...</option>
+<option value="entry">Entry Level (0-2 years)</option>
+<option value="mid">Mid Level (3-5 years)</option>
+<option value="senior">Senior Level (5+ years)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Certification Required</label>
+<input class="form-input font-body-md text-body-md bg-transparent" placeholder="e.g. HSE Certified, ISO..." type="text"/>
+</div>
+</div>
+<!-- Logistics -->
+<div class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-outline-variant">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Location</label>
+<select class="form-input font-body-md text-body-md bg-transparent">
+<option value="">Select site location...</option>
+<option value="doha">Doha</option>
+<option value="alkhor">Al Khor</option>
+<option value="lusail">Lusail</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Start Date</label>
+<input class="form-input font-body-md text-body-md bg-transparent" type="date"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Duration</label>
+<select class="form-input font-body-md text-body-md bg-transparent">
+<option value="">Select duration...</option>
+<option value="1m">1 Month</option>
+<option value="3m">3 Months</option>
+<option value="6m">6 Months</option>
+<option value="1y">1 Year</option>
+</select>
+</div>
+</div>
+<!-- Work Type & Benefits -->
+<div class="col-span-1 md:col-span-2 pt-4 border-t border-outline-variant">
+<label class="block font-label-md text-label-md text-on-surface mb-3">Work Type</label>
+<div class="flex gap-4 mb-6">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="text-secondary focus:ring-secondary h-4 w-4 border-outline-variant" name="workType" type="radio" value="contract"/>
+<span class="font-body-md text-body-md text-on-surface">Contract</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="text-secondary focus:ring-secondary h-4 w-4 border-outline-variant" name="workType" type="radio" value="project"/>
+<span class="font-body-md text-body-md text-on-surface">Project-based</span>
+</label>
+</div>
+<label class="block font-label-md text-label-md text-on-surface mb-3">Benefits Provided</label>
+<div class="flex flex-wrap gap-6">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary h-4 w-4 border-outline-variant" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Accommodation</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary h-4 w-4 border-outline-variant" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Transportation</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary h-4 w-4 border-outline-variant" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Food</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="mt-8 flex flex-col sm:flex-row gap-4 justify-end">
+<button class="px-6 py-3 rounded-lg border border-outline font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" type="button">
+                    Save as Draft
+                </button>
+<button class="px-6 py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2 h-12" type="submit">
+                    Publish Requirement
+                </button>
+</div>
+</form>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface dark:bg-inverse-surface border-t border-outline-variant">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary bg-primary-container/20 rounded-xl px-4 py-1 scale-95 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">work</span>
+<span class="font-label-sm text-label-sm mt-1 font-bold">Jobs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-200" href="#">
+<span class="material-symbols-outlined">bolt</span>
+<span class="font-label-sm text-label-sm mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-200" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-sm text-label-sm mt-1">Messages</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

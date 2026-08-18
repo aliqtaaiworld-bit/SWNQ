@@ -2,62 +2,65 @@
 
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SWNQ - SmartWork Now Qatar</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>SWNQ - Worker Dashboard</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "tertiary-fixed-dim": "#ffb95f",
-                        "surface-container": "#e9edff",
-                        "tertiary-container": "#e29100",
-                        "surface-tint": "#006c49",
-                        "tertiary-fixed": "#ffddb8",
-                        "inverse-primary": "#4edea3",
-                        "primary-fixed": "#6ffbbe",
-                        "tertiary": "#855300",
-                        "surface-container-low": "#f1f3ff",
-                        "on-primary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#bbcabf",
-                        "outline": "#6c7a71",
-                        "surface-bright": "#f9f9ff",
-                        "secondary-container": "#316bf3",
-                        "on-tertiary-fixed-variant": "#653e00",
-                        "on-secondary-fixed": "#00174b",
-                        "on-surface": "#141b2b",
-                        "surface-dim": "#d3daef",
-                        "on-error-container": "#93000a",
-                        "on-primary-fixed": "#002113",
-                        "secondary-fixed": "#dbe1ff",
-                        "on-secondary": "#ffffff",
-                        "surface-container-high": "#e1e8fd",
-                        "surface-container-highest": "#dce2f7",
-                        "on-primary-fixed-variant": "#005236",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-container": "#523200",
-                        "on-background": "#141b2b",
                         "error": "#ba1a1a",
-                        "secondary-fixed-dim": "#b4c5ff",
-                        "on-error": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "on-surface-variant": "#3c4a42",
-                        "primary-fixed-dim": "#4edea3",
-                        "on-secondary-container": "#fefcff",
-                        "inverse-on-surface": "#edf0ff",
-                        "surface-variant": "#dce2f7",
-                        "on-primary-container": "#00422b",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f1f3ff",
+                        "tertiary-fixed": "#ffddb8",
                         "surface": "#f9f9ff",
+                        "on-primary-container": "#00422b",
+                        "inverse-on-surface": "#edf0ff",
+                        "secondary": "#0051d5",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-secondary-fixed": "#00174b",
+                        "primary": "#006c49",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#316bf3",
+                        "on-tertiary-container": "#523200",
+                        "surface-container": "#e9edff",
+                        "inverse-surface": "#293040",
+                        "primary-container": "#10b981",
+                        "on-surface": "#141b2b",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-dim": "#d3daef",
+                        "surface-variant": "#dce2f7",
+                        "surface-container-high": "#e1e8fd",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "on-surface-variant": "#3c4a42",
+                        "on-tertiary-fixed": "#2a1700",
+                        "tertiary": "#855300",
                         "on-secondary-fixed-variant": "#003ea8",
                         "background": "#f9f9ff",
-                        "primary-container": "#10b981",
-                        "inverse-surface": "#293040",
-                        "secondary": "#0051d5",
-                        "on-tertiary-fixed": "#2a1700",
-                        "primary": "#006c49"
+                        "outline-variant": "#bbcabf",
+                        "tertiary-container": "#e29100",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#002113",
+                        "surface-tint": "#006c49",
+                        "error-container": "#ffdad6",
+                        "outline": "#6c7a71",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-primary": "#4edea3",
+                        "primary-fixed": "#6ffbbe",
+                        "on-background": "#141b2b",
+                        "surface-container-highest": "#dce2f7",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-secondary-container": "#fefcff"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -67,65 +70,40 @@
                     },
                     "spacing": {
                         "gutter": "16px",
-                        "margin-desktop": "32px",
+                        "unit": "4px",
                         "margin-mobile": "16px",
-                        "container-max": "1280px",
-                        "unit": "4px"
+                        "margin-desktop": "32px",
+                        "container-max": "1280px"
                     },
                     "fontFamily": {
-                        "label-md": ["Inter"],
-                        "body-md": ["Inter"],
+                        "status-badge": ["Inter"],
                         "display-lg": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "label-sm": ["Inter"],
-                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
                         "headline-lg-mobile": ["Inter"],
-                        "status-badge": ["Inter"]
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"]
                     },
                     "fontSize": {
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "status-badge": ["11px", { "lineHeight": "12px", "fontWeight": "700" }],
                         "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
                         "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
-                        "status-badge": ["11px", { "lineHeight": "12px", "fontWeight": "700" }]
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
                     }
                 }
             }
         }
     </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .animate-fade-up {
-            animation: fadeUp 0.8s ease-out forwards;
-        }
-        
-        .delay-100 { animation-delay: 100ms; opacity: 0; }
-        .delay-200 { animation-delay: 200ms; opacity: 0; }
-        .delay-300 { animation-delay: 300ms; opacity: 0; }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+        .pt-safe { padding-top: env(safe-area-inset-top); }
     </style>
 <style>
     body {
@@ -133,52 +111,218 @@
     }
   </style>
   </head>
-<body class="bg-surface font-body-md text-on-surface antialiased h-screen w-screen overflow-hidden flex flex-col">
-<!-- Background Image with Overlay -->
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="A high-quality, professional photograph of industrial workers at a modern construction site or oil refinery in Qatar during golden hour. The workers are wearing pristine safety gear, including hard hats and high-visibility vests. The scene exudes reliability, scale, and modern engineering. The lighting is dramatic yet clear, emphasizing the high-trust, corporate aesthetic of the SWNQ platform. The image uses a rich palette with subtle industrial tones, ensuring a premium, high-impact visual that instills immediate confidence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_y3o4zVKea0faEWNkSuej9nIR4h-Hwl5Cp_MMetgm6CZFqrTsG6wEoZ07pnsLzG49xc1LZtHXmXKXuhwFfy5YYGRaYId4kYWuHD3mvmo4RVbpLKngYbrc8FbvKhtkpuREByOFWXH8I_iIp80YRcq0NB1e3NoW1F-kf0q1FdeHguEk740iLj6oyTlSBGzCkdcTnvcWZym8sY52mTpsIZfBTphCohBAl2OP8JqAKM8zLhMkz6Ui0dA9')">
-</div>
-<!-- Gradient Overlay for readability -->
-<div class="absolute inset-0 bg-gradient-to-b from-inverse-surface/80 via-inverse-surface/40 to-inverse-surface/90"></div>
-</div>
-<!-- Main Content Container -->
-<main class="relative z-10 flex flex-col items-center justify-between h-full w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
-<!-- Top Spacer -->
-<div class="w-full flex justify-center">
-<!-- Brand Logo -->
-<div class="animate-fade-up text-primary-fixed font-display-lg tracking-tight flex items-center gap-3">
-<svg class="text-primary-container" fill="none" height="40" viewbox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"></path>
-<path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-                SWNQ
-            </div>
-</div>
-<!-- Center Content -->
-<div class="flex flex-col items-center text-center max-w-2xl px-4 w-full">
-<h1 class="animate-fade-up delay-100 font-display-lg text-on-primary mb-6 drop-shadow-lg leading-tight">
-                Work Available.<br/>
-                Workers Available.<br/>
-<span class="text-primary-container">Now.</span>
-</h1>
-<p class="animate-fade-up delay-200 font-body-lg text-surface-container-highest mb-12 max-w-lg drop-shadow-md">
-                The premier platform connecting reliable industrial talent with Qatar's top enterprises in real-time.
-            </p>
-</div>
-<!-- Bottom Action Area -->
-<div class="w-full max-w-md animate-fade-up delay-300">
-<div class="glass-panel rounded-xl p-6 shadow-xl w-full flex flex-col gap-4">
-<button class="w-full h-12 bg-primary-container hover:bg-primary text-on-primary font-label-md rounded-lg transition-colors duration-200 shadow-md flex items-center justify-center gap-2">
-                    Get Started
-                    <svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
+<body class="bg-background text-on-background antialiased pt-16 pb-20 md:pb-0 md:pl-80 min-h-screen">
+<!-- TopAppBar Mobile -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 h-16 bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-outline md:hidden">
+<button aria-label="Menu" class="text-on-surface-variant dark:text-surface-variant p-2 -ml-2 rounded-full hover:bg-surface-container dark:hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[24px]">menu</span>
 </button>
-<div class="flex items-center justify-center gap-2 text-on-surface-variant font-label-sm mt-2">
-<span>Already have an account?</span>
-<a class="text-secondary hover:text-secondary-fixed-variant font-bold transition-colors" href="#">Log in</a>
+<div class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight">SWNQ</div>
+<button aria-label="Notifications" class="text-on-surface-variant dark:text-surface-variant p-2 -mr-2 rounded-full hover:bg-surface-container dark:hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</button>
+</header>
+<!-- Navigation Drawer Desktop -->
+<nav class="hidden md:flex fixed inset-y-0 left-0 z-[60] flex-col h-full w-80 rounded-r-xl bg-surface dark:bg-inverse-surface shadow-xl border-r border-outline-variant">
+<div class="p-6 border-b border-outline-variant flex items-center justify-between">
+<div class="text-headline-md font-headline-md font-bold text-primary">SWNQ</div>
+<button class="text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">menu_open</span>
+</button>
+</div>
+<div class="p-6 flex items-center gap-4 border-b border-outline-variant">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-primary-container" data-alt="A professional headshot of a Middle Eastern male industrial worker wearing clean safety gear, lit with bright, clear, high-key studio lighting suitable for a corporate ID badge. The background is a stark, clean white to emphasize professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYzQJl-t5J6SALW7CxdQu9gh0IS5GIF-h2nckBPURW7JDDW3lUM_M44RNshjv8mc07GHxvR6dHDKMnJd53WsGgJ_mtfo-8ELbFarYnSBSbRow5SJgg76omK8RpyaifqlhT4QCpue39_Q2tU5biFuq5mqnLcmUiGB4UflCUVcAKeR8HaFw2lfDlnaLZg_0GrGi366eq2pNqMbI8BCdfp1wo2DIADkv2-5-2_5iS1CwixvkI6pCHRWlZ"/>
+<div>
+<h3 class="text-label-md font-label-md text-on-surface">Ahmed Hassan</h3>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Scaffolder</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Verified Worker</span>
 </div>
 </div>
 </div>
+<div class="flex-1 overflow-y-auto py-4 px-2 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container text-on-secondary-container font-bold rounded-full mx-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-label-md font-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-label-md font-label-md">Jobs</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-label-md font-label-md">Saved Workers</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="text-label-md font-label-md">Payment History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md font-label-md">Settings</span>
+</a>
+</div>
+<div class="p-4 border-t border-outline-variant">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-full transition-colors w-full" href="#">
+<span class="material-symbols-outlined">swap_horiz</span>
+<span class="text-label-md font-label-md">Switch to Employer</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="max-w-[1280px] mx-auto p-4 md:p-8 space-y-6">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Worker Dashboard</p>
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface">GOOD MORNING, AHMED 👋</h1>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-3 right-3 w-2.5 h-2.5 bg-error rounded-full border-2 border-surface-container-high"></span>
+</button>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+<!-- Availability Card (Hero Feature) -->
+<div class="col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col">
+<div class="p-6 md:p-8 flex-1 flex flex-col justify-center items-center text-center bg-gradient-to-b from-primary-container/10 to-transparent">
+<div class="w-20 h-20 rounded-full bg-primary-container/20 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[40px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-2">You are currently <span class="text-primary font-bold">AVAILABLE</span></h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Available until: 20 Nov 2026</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 border-t border-outline-variant divide-y md:divide-y-0 md:divide-x divide-outline-variant">
+<button class="p-4 flex items-center justify-center gap-2 text-primary font-label-md text-label-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+                        Extend Availability
+                    </button>
+<button class="p-4 flex items-center justify-center gap-2 text-error font-label-md text-label-md hover:bg-error-container/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]">block</span>
+                        Mark Unavailable
+                    </button>
+</div>
+</div>
+<!-- Stats Column -->
+<div class="col-span-1 md:col-span-4 flex flex-col gap-4">
+<!-- Profile Strength -->
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant shadow-sm flex items-center gap-4">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90 absolute inset-0" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-width="3"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="92, 100" stroke-width="3"></path>
+</svg>
+<span class="text-label-md font-label-md font-bold text-on-surface">92%</span>
+</div>
+<div>
+<h3 class="text-label-md font-label-md text-on-surface-variant">Profile Strength</h3>
+<p class="text-status-badge font-status-badge text-primary mt-1">Excellent</p>
+</div>
+</div>
+<!-- New Opportunities -->
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant shadow-sm flex items-center justify-between">
+<div>
+<h3 class="text-label-md font-label-md text-on-surface-variant">New Opportunities</h3>
+<p class="text-headline-md font-headline-md text-on-surface font-bold mt-1">7</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined">work</span>
+</div>
+</div>
+<!-- Profile Views -->
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant shadow-sm flex items-center justify-between">
+<div>
+<h3 class="text-label-md font-label-md text-on-surface-variant">Profile Views</h3>
+<p class="text-headline-md font-headline-md text-on-surface font-bold mt-1">28</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommended Opportunities -->
+<section class="mt-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-headline-md font-headline-md text-on-surface">Recommended Opportunities</h2>
+<button class="text-primary font-label-md text-label-md hover:underline">View All</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-5 hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-3">
+<div class="px-2 py-1 bg-surface-container-high rounded text-status-badge font-status-badge text-on-surface-variant uppercase">URGENT</div>
+<span class="material-symbols-outlined text-outline">bookmark_border</span>
+</div>
+<h3 class="text-body-lg font-body-lg font-bold text-on-surface leading-tight mb-2">10 Scaffolders Needed</h3>
+<div class="grid grid-cols-2 gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="text-label-sm font-label-sm">Doha, Qatar</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-label-sm font-label-sm">3 Months</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-5">
+<span class="px-2 py-1 bg-[#F3F4F6] text-[#374151] rounded-lg text-label-sm font-label-sm">TUV Certified</span>
+<span class="px-2 py-1 bg-[#F3F4F6] text-[#374151] rounded-lg text-label-sm font-label-sm">Min 3 Yrs</span>
+</div>
+<button class="w-full py-3 bg-primary-container text-on-primary rounded-lg text-label-md font-label-md hover:bg-primary-fixed-dim transition-colors">Apply Now</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-5 hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start mb-3">
+<div class="px-2 py-1 bg-surface-container-high rounded text-status-badge font-status-badge text-on-surface-variant uppercase">NEW</div>
+<span class="material-symbols-outlined text-outline">bookmark_border</span>
+</div>
+<h3 class="text-body-lg font-body-lg font-bold text-on-surface leading-tight mb-2">Scaffolding Supervisor</h3>
+<div class="grid grid-cols-2 gap-2 mb-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="text-label-sm font-label-sm">Lusail, Qatar</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-label-sm font-label-sm">6 Months</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mb-5">
+<span class="px-2 py-1 bg-[#F3F4F6] text-[#374151] rounded-lg text-label-sm font-label-sm">Supervisor</span>
+<span class="px-2 py-1 bg-[#F3F4F6] text-[#374151] rounded-lg text-label-sm font-label-sm">HSE</span>
+</div>
+<button class="w-full py-3 bg-primary-container text-on-primary rounded-lg text-label-md font-label-md hover:bg-primary-fixed-dim transition-colors">Apply Now</button>
+</div>
+</div>
+</section>
 </main>
+<!-- BottomNavBar Mobile -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface dark:bg-inverse-surface border-t border-outline-variant dark:border-outline shadow-lg dark:shadow-none md:hidden">
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim bg-primary-container/20 dark:bg-primary-container/10 rounded-xl px-2 py-1 scale-95 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm mt-1 font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors px-2 py-1" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-label-sm font-label-sm mt-1">Jobs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors px-2 py-1" href="#">
+<span class="material-symbols-outlined">bolt</span>
+<span class="text-label-sm font-label-sm mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors px-2 py-1 relative" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="absolute top-1 right-2 w-2 h-2 bg-error rounded-full"></span>
+<span class="text-label-sm font-label-sm mt-1">Messages</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors px-2 py-1" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm mt-1">Profile</span>
+</a>
+</nav>
 </body></html>
