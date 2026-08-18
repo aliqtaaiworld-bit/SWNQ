@@ -2,22 +2,29 @@
   "name": "SWNQ - SmartWork Now Qatar",
   "short_name": "SWNQ",
   "description": "Qatar's real-time workforce availability platform. Work Available. Workers Available. Now.",
-  "start_url": "/",
+  "start_url": "/SWNQ/",
+  "scope": "/SWNQ/",
   "display": "standalone",
   "background_color": "#f9f9ff",
   "theme_color": "#10b981",
   "icons": [
     {
-      "src": "https://images.unsplash.com/photo-1590483734724-383b853b237d?q=80&w=192&h=192&auto=format&fit=crop",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "https://images.unsplash.com/photo-1590483734724-383b853b237d?q=80&w=512&h=512&auto=format&fit=crop",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
